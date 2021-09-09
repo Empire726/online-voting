@@ -1,0 +1,390 @@
+.Navbar{
+    background: linear-gradient(90deg, white 10%, #00aeda 100%);
+    height: 13vh;
+    border-bottom:  0.2px solid rgba(0, 0, 0, 0.377);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    top: 0;
+   
+}
+ 
+.Navbar img{
+    height: 12.5vh;
+}
+
+.navbar-logo{ 
+    justify-content: center;   
+    align-items: center;
+    cursor: pointer;
+}
+
+.fa-react{
+   
+    font-size: 1.6rem;   
+}
+
+.nav-menu{
+    display: flex;
+    list-style: none;
+    text-align: center;
+    width:80vw;
+    margin-left:2rem;
+    justify-content: flex-end;
+   
+}
+
+.nav-links{
+    color:blueviolet;
+    text-decoration: none;
+    padding: 0.5rem  2rem;
+}
+
+.nav-item{
+    line-height: 40px;
+    margin-left: 0.5rem;
+    justify-content: center;
+    margin-top: 1rem;
+
+}
+.nav-item a:hover{
+    text-decoration: none;
+}
+
+.nav-item::after{
+    content: "";
+    display:block;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width 0.7s ease , background-color 0.5s ease ;
+}
+
+.nav-item:hover::after{
+  width: 100%;
+  background: #ffdd42;
+}
+
+
+
+.nav-links:hover{
+    background-color: #6d76f7;
+    border-radius: 4px;
+    transition: all .2s ease-out;
+}
+
+.fa-bars{
+    color: #fff;
+}
+
+.nav-links-mobile{
+    display: none;
+}
+
+.menu-icon{
+    display: none;
+}
+
+
+
+.navlinks{
+    width: 50%;
+    right: 0;
+    text-decoration: none;
+    color: #000;
+}
+
+/* -------------------------------------------cart logo---------------- */
+.rightside {
+    height: 11vh;
+    width: 100%;
+    box-sizing: border-box;
+    border: 0.3px solid rgba(0, 0, 0, 0.459);
+    padding: 1.5rem;
+    
+}
+.rightside span{ 
+    top: 0;
+    right: 0;
+  
+
+}
+.logout-btn{
+    align-items: center;
+    padding: 0.5rem;
+    
+}
+
+.rightside .navlinks{
+    text-decoration: none;
+    color:blue;
+   
+}
+ 
+
+/* ----------------------------------------- */
+@media screen and (max-width:1024px){
+    .navbar-logo{
+    
+    cursor: pointer;
+}
+.rightside{
+    width: 100%;
+}
+.navlinks{
+    margin-left: 40%;
+    padding-left: -80px;
+}
+.logout-btn{
+    margin-left: 19rem;
+}
+}
+
+@media screen and (max-width: 960px) {
+    .Navbar{
+        position: relative;
+        left: 0;
+          background: linear-gradient(90deg, #000000 45%,#000000 100%);
+    }
+    
+.navlinks{
+    margin-left: 10%;
+   font-size: 150%;
+   margin-bottom: 1px;
+   padding: 1px;
+    
+}
+.logout-btn{
+    position: absolute;
+    display: block;
+    margin-left: 40rem; 
+    
+    top: 1rem;  
+}
+
+.rightside{
+   height: 11vh;
+}
+
+    .navbar-logo{
+    width: 25%;
+    cursor: pointer;
+    margin-left: -520px;
+}
+
+    .nav-menu{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 13vh;
+        left:-100%;
+        transition: all .5s ease;
+        border-top: 1px solid #fff;
+        margin-left: 0px;
+    }
+
+
+
+    .nav-menu.active{
+        background: black;
+        left: 0;
+        transition: all .5s ease;
+        z-index: 1;
+    }
+
+    .nav-links{
+        text-align: center;
+        color: #fff;
+        padding: 1rem;
+        width: 100%;
+        display: table;
+    }
+
+    .nav-links:hover{
+        background-color: #00aeda;
+        border-radius: 0;
+         margin: 1rem 2rem 1rem 0rem;
+    }
+
+
+    .menu-icon{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 30%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+    
+    .fa-times{
+        color: #fff;
+        font-size: 2rem;
+    }
+
+    .nav-links-mobile{
+        display: block;
+        text-align: center;
+        padding: 0.5rem;
+        margin: 1rem 2rem 1rem 0rem;
+        border-radius: 4px;
+        width: 95%;
+        background: #00aeda;
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.5rem;
+    }
+
+    .nav-links-mobile:hover{
+        background: #fff;
+        color: #6568f4;
+        transition: 250ms;
+    }
+
+    Button {
+        display: none;
+    }
+}
+@media screen and (max-width:760px){
+   .logout-btn{
+    
+    margin-left: 35rem; 
+    
+   }
+
+}
+@media screen and (max-width:720px){
+   .navbar-logo{
+    width: 25%;
+    cursor: pointer;
+    margin-left: -320px;
+}  
+.logout-btn{
+   
+    margin-left: 20rem;    
+}
+
+
+}
+@media screen and (max-width:550px) {
+
+.navlink {
+    text-decoration: none;
+    color:#ffffff;
+    /* width: 50%; */
+    
+}
+
+
+.nav-body{
+    color: black;
+}
+.Navbar{
+    background-color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    top: 0;
+   
+}
+
+
+ .navbar-logo{
+      width: 25%;
+    cursor: pointer;
+    margin-left: -320px;
+}  
+
+.menu-icon{
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+    
+    .fa-times{
+        color: #fff;
+        font-size: 2rem;
+    }
+    .nav-menu.active{
+        background: black;
+        left: 0;
+        transition: all .5s ease;
+        z-index: 1;
+    }
+    .nav-menu{
+       
+        transition: all 0.5s ease;
+        border-top: 1px solid #fff;
+        margin-left: 0px;
+        /* border: 1px solid #fff; */
+    }
+    .nav-links{
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.5rem  2rem 0.5rem 0rem;
+   
+}
+
+
+    
+}
+@media screen and (max-width:480px) {
+  
+
+
+
+ .navbar-logo{
+     position: relative;
+    width: 25%;
+    cursor: pointer;
+    margin-left: -200px;
+}  
+
+.menu-icon{
+       
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 30%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+    
+    .fa-times{
+        color: #fff;
+        font-size: 2rem;
+    }
+    .nav-menu.active{
+        background: black;
+        left: 0;
+        transition: all .5s ease;
+        z-index: 1;
+    }
+    .nav-menu{
+       
+        transition: all 0.5s ease;
+        border-top: 1px solid #fff;
+        margin-left: 0px;
+        /* border: 1px solid #fff; */
+    }
+    .nav-links{
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.5rem  2rem 0.5rem 0rem;
+   
+}
+.logout-btn{
+   
+    margin-left: 15rem;    
+}
+
+
+
+
+}

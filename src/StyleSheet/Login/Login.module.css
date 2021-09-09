@@ -1,0 +1,41 @@
+.sign-up{
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+height: 80vh;
+width: 100%;
+}
+.sign-body h1{
+    margin-left: 1rem;
+}
+
+.sign-body{
+    height: auto;
+    margin: 3rem;
+   
+    background-color: whitesmoke;
+    box-shadow: 10px 10px 10px 12px rgba(0, 0, 255, .2);
+
+}
+.format{
+    margin: 2rem;
+     padding: 3rem;
+}
+.form_group{
+    margin: 2rem;
+    
+}
+.form_group input{
+    border-top: none;
+     border-left: none;
+      border-right: none;
+      border-color: black;
+      margin-left: 0.5rem;
+      width: 50%;
+     
+
+}
+.form_group input:hover{
+    border: none;
+}

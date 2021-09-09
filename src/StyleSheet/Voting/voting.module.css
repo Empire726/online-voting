@@ -1,0 +1,115 @@
+.body-vote{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.voting{
+    margin: 0.1rem 0.1rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 5px 5px ;
+    background-color: #00ff80;
+    border-radius: 1rem;
+    flex-wrap: wrap;
+}
+.voting:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.light{
+    background-color: blue;
+    width: 2rem;
+    height: 1.5rem;
+    border-radius: 45%;
+    padding: 0.5rem;
+    margin-top: 2rem;
+  
+}
+.light::after:hover {
+    background-color: chartreuse;
+}
+/* .list  */
+.list h5{
+    text-align: center;
+    margin-top: 1rem;
+    /* color: rgba(255, 255, 255, 0.664); */
+    font-weight: 600;
+    font-size: 200%;
+    width: 50%;
+    
+}
+.list{
+    margin: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+     border-bottom: 1px solid black;
+}
+
+.list img{
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10px;
+    border-radius: 30%;
+}
+.list button{
+    margin: 1rem;
+}
+.voting a{
+    text-decoration: none;
+    color: #fff;
+}
+@media screen and (max-width:540px) {
+   .voting{
+    margin: 0 ;
+    border-radius: 2rem;
+    display: flex;
+    background-color: #00aeda;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.voting:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.list h5{
+    text-align: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.664);
+    margin: 1rem;
+    font-weight: 600;
+    font-size: 180%;
+    
+}
+.list{
+    margin: 1rem ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+.list img{
+    height: 50px;
+    margin-top: 2rem;
+}
+.list button{
+    /* height: 20px ; */
+    margin: 2rem 0.1rem;
+} 
+.voting a{
+    text-decoration: none;
+    color: #fff;
+}
+    
+}
+
+/* ------------------------------------------------------------------ */
+.image_div{
+    display: flex;
+    flex-direction: row;
+    margin-left: 3rem;
+    padding: 1rem;
+}
+
+link:active.light{ 
+    background-color: greenyellow;
+}
+
